@@ -1,0 +1,49 @@
+# Cape Point Species Selection
+# 
+# 
+
+```{r,message=F}
+library(readxl)
+library(tidyr)
+library(dplyr)
+library(knitr)
+```
+# Read veg data
+```{r}
+v=read_excel("/Users/adamw/Documents/Work/manuscripts/2017/Slingsby_CapePoint/pnassiworkflows/Dataset1.xlsx",sheet = "veg2010")
+```
+
+# Read trait data
+```{r}
+t=read_excel("/Users/adamw/Documents/Work/manuscripts/2017/Slingsby_CapePoint/pnassiworkflows/Dataset1.xlsx",
+             sheet = "traits")
+```
+
+# Reshape trait data
+```{r}
+t2=t%>%
+  select(-X__1,-family_GM)%>%
+  gather(key=growth_form,value=type,-species)%>%
+  filter(type!=0,
+         growth_form!="resprout_postfire")%>%
+    select(-type)
+```
+
+# Merge, filter, sort
+
+`plot_count` is the number of plots in which the species was found in 2010 (a measure of how common it is).
+
+```{r}
+v2=gather(v,key=species,value=abundance,-X__1)%>%
+  group_by(species)%>%
+  summarize(plot_count=sum(abundance>0))%>%
+  left_join(t2,by="species")%>%
+  filter( !is.na(growth_form))%>%
+  group_by(growth_form)%>%
+  arrange(desc(growth_form),desc(plot_count))%>%
+  filter(row_number()<10)
+```
+
+```{r}
+kable(v2)
+```

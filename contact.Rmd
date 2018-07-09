@@ -1,0 +1,6 @@
+---
+title: "Contact"
+---
+
+[<i class="fa fa-envelope fa-2x" aria-hidden="true" color="blue"></i>](https://groups.google.com/forum/#!forum/cfr_biodiversity/join) [If you want to be involved in this project, click here to sign up to our email listserve (we will not share your email and you can unsubscribe at any time).](https://groups.google.com/forum/#!forum/cfr_biodiversity/join)
+

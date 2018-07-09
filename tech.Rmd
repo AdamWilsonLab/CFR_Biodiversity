@@ -1,0 +1,33 @@
+---
+title: "Technology"
+---
+
+# Aircraft
+***
+
+## [ER-2](https://airbornescience.nasa.gov/aircraft/ER-2)
+
+This field campaign would use NASA's ER-2 aircraft as a platform for the sensors listed below. The ER-2 is a high altitude aircraft that operates at 70,000 ft (~21 km) with a flight range of approximately 5700 miles. This altitude and range simulate the conditions of orbiting satellites, providing an important scaling step for future space-based biodiversity missions.
+
+# Sensors
+***
+
+## [Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG)](https://aviris-ng.jpl.nasa.gov/)
+
+The AVIRIS-NG is an whisk-broom imaging spectrometer with a spectral range of 380-2510 nm and sampling resolution of 5nm. It is the replacement to the widely used AVIRIS-Classic.
+
+Within the GCFR, AVIRIS-NG would be used to assess a wide suite of plant functional traits (chemical, structural and physiological) and community composition characteristics. It would also be used in marine applications such as sensing chlorophyll concentrations. 
+
+## [Hyperspectral Thermal Emission Spectrometer (HyTES)](http://hytes.jpl.nasa.gov/)
+
+The HyTES sensor is a hyperpectral imaging spectrometer measuring thermal emission in the 7.5 $\mu$m-12 $\mu$m range.  It will provide ecosystem diversity metrics in terrestrial settings and physical marine measurements (e.g. sea surface temperatures).
+
+## [Portable Remote Imaging Spectrometer (PRISM)](http://prism.jpl.nasa.gov/)
+
+The PRISM sensor is a pushbroom imaging spectrometer with a spectral range from 350-1050 nm as well two bands in the short wave infrared (SWIR) spectral region. It's primary function will be to explore marine and freshwater ecosystem distribution, structure and composition.
+
+## [Land, Vegetation, and Ice Sensor (LVIS)](https://airbornescience.nasa.gov/instrument/LVIS)
+
+LVIS is a laser altimeter scanner able to produce 3-D images of topography and vegetation. Data from LVIS would be fused with spectral information from the above scanners to enhance biodiversity observation and prediction.
+
+***
